@@ -1,0 +1,277 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto' , 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: #F2F2F2;
+    min-width: 1000px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    *{
+        color: #5C5C5C;
+    }
+}
+
+header{
+    width: 100%;
+    height: 155px;
+    background-color: #a8d5ba;
+    min-width: 900px;
+}
+
+#headerBox{
+    height: 100%;
+    width: 80%;
+    margin: 0px auto;
+    
+}
+
+.orange{
+    color: #F6A27E;
+}
+
+.gray{
+    color: #5C5C5C;
+}
+
+h1{
+    margin: 20px 20px;
+}
+
+#logo{
+    width: 200px;
+    height: 155px;
+    float: left;
+    text-align: center;
+    line-height: 155px;
+    
+    h2{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    a{
+        
+        height: 100%;
+        display: block;
+        text-decoration:none;
+        text-transform: uppercase;
+        color: rgb(29, 25, 25);
+        font-size: larger;
+    }
+
+}
+
+.clear{
+    clear: both;
+}
+
+nav{
+    float: right;
+    margin-top: 60px;
+    li{
+        float: left;
+        list-style: none;
+        
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    
+    a{
+        padding: 10px;
+        text-decoration:none;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    
+    a:hover{
+        color: #F8E16C;
+        text-decoration: none;
+    }
+}
+
+#inputDiv{
+    float: right;
+    margin-top: 60px;
+}
+
+#pesquisa{
+    background: #f3f3f3 url('lupa.png') no-repeat left center;
+    background-size: 15px;
+    background-position-x: 10px;
+    position: relative;
+    margin-left: 20px;
+    height: 35px;
+    text-indent: 30px;
+    border-radius: 10px;
+    border: 0px;
+           
+}
+
+.anima{
+    transition: transform 1s ease;
+    position: relative;
+    
+}
+
+.card{
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+    background-color: #F6A27E;
+    border: 0px solid #6EC1E4;
+    border-width: 0px 2px 2px 0px;
+    padding-top: 25px;
+    
+
+    h3, h4, button{
+        width: fit-content;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+
+    button{
+        display: block;
+        height: 30px;
+        border-radius: 8px;
+        border-width: 0px 2px 2px 0px;
+        border-color: #6EC1E4;
+        background-color: #F8E16C;;
+    }
+
+    button:active{
+        border-width: 2px 0px 0px 2px;
+    }
+
+    button:hover{
+        background-color: #ffdd43;
+    }
+
+
+}
+
+.photo{
+    width: 180px;
+    height: 180px;
+    background-color: #6EC1E4;
+    border: 10px solid #6EC1E4;
+    border-radius: 20px;
+    margin: 0px auto;
+    text-align: center;
+    overflow: hidden;
+    img{
+        border-radius: 20px;
+    }
+
+}
+
+.carrosel{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+svg{
+    stroke: #a1a0a0;
+    width: 60px;
+    height: 60px;
+}
+
+svg:active{
+    opacity: 0.8;
+}
+
+.roda{
+    transform: rotate(180deg);
+}
+
+
+.setaR{
+    float: right;
+}
+
+.setaL{
+    float: left;
+}
+
+.cardContainer{
+    display: block;
+    width: 85%;
+    overflow: hidden;
+}
+
+.insideContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 150%;
+    position: relative;
+    left: -25%;
+    height: 95%;
+}
+
+footer{
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background-color: rgb(163, 163, 163);
+    width: 100%;
+}
+
+.tituloCentrado{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.formField{
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #5C5C5C;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.inputCad{
+    display: inline;
+    margin-right: 30px;
+}
+
+input.dados{
+    display: inline-block;
+    height: 40px;
+    width: 35%;
+    font-size: 18px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border:none;
+}
+
+label{
+    color: white;
+}
+
+input.submit{
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 100%;
+    margin: 0px auto;
+
+    background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+    background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+    background: linear-gradient(to bottom, #faa600, #f68a00);
+}
