@@ -1,10 +1,10 @@
 // conjunto de cards do carrossel
-const cards = ['<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 1 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
-    '<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 2 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
-    '<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 3 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
-    '<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 4 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
-    '<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 5 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
-    '<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira 6 Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>'];
+const cards = ['<div class="card"><div class="photo"><img src="./peitoral.webp" alt="" height="180px"></div><h3 class="nome">Coleira Peitoral</h3><h4 class="preco">R$ 44,25</h4><button class="comprar">COMPRAR</button></div>',
+    '<div class="card"><div class="photo"><img src="./coleira.webp" alt="" height="180px"></div><h3 class="nome">Coleira</h3><h4 class="preco">R$ 12,50</h4><button class="comprar">COMPRAR</button></div>',
+    '<div class="card"><div class="photo"><img src="./mordedor.jpeg" alt="" height="180px"></div><h3 class="nome">Mordedor</h3><h4 class="preco">R$ 37,20</h4><button class="comprar">COMPRAR</button></div>',
+    '<div class="card"><div class="photo"><img src="./caminha.jpeg" alt="" height="180px"></div><h3 class="nome">Cama para pet</h3><h4 class="preco">R$ 249,88</h4><button class="comprar">COMPRAR</button></div>',
+    '<div class="card"><div class="photo"><img src="./shampoo.jpeg" alt="" height="180px"></div><h3 class="nome">Shampoo</h3><h4 class="preco">R$ 15,50</h4><button class="comprar">COMPRAR</button></div>',
+    '<div class="card"><div class="photo"><img src="./arranhador.jpeg" alt="" height="180px"></div><h3 class="nome">Arranhador</h3><h4 class="preco">R$ 38,60</h4><button class="comprar">COMPRAR</button></div>'];
 
 // selecionando os elementos do carrossel
 const container = document.querySelector('.insideContainer');
@@ -102,5 +102,5 @@ function setaClick(val){
     setTimeout(() => anima(val), '1');
 }
 
-left.addEventListener("click", () => setaClick(1));
-right.addEventListener("click", () => setaClick(-1));
+left.addEventListener("click", () => setaClick(-1));
+right.addEventListener("click", () => setaClick(1));

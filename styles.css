@@ -28,6 +28,21 @@ header{
     
 }
 
+#msgHeader{
+    float: left;
+    width: 200px;
+    margin-top: 45px;
+}
+
+#osso{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    svg{
+        width: 100px; height: 50px;
+    }
+}
+
 .orange{
     color: #F6A27E;
 }
@@ -67,6 +82,16 @@ h1{
 
 .clear{
     clear: both;
+}
+
+.nav_footer{
+    float: none;
+    margin: 0 auto;
+}
+
+.ulBottom{
+    width: fit-content;
+    margin: 0 auto;
 }
 
 nav{
@@ -225,6 +250,34 @@ footer{
     width: 100%;
 }
 
+.footerDetails{
+    float: left; 
+    margin-left: 50px;
+
+    p{
+        margin: 0;
+    }
+
+    ul{
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    li{
+        text-align: left;
+    }
+}
+
+.contato{
+    width: fit-content; 
+    margin: 0 auto;
+}
+
+footer>p{
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .tituloCentrado{
     width: fit-content;
     margin: 0 auto;
@@ -233,6 +286,7 @@ footer{
 
 .formField{
     padding: 20px;
+    padding-left: 30px;
     width: 400px;
     border-radius: 10px;
     background-color: #5C5C5C;
@@ -242,13 +296,50 @@ footer{
 
 .inputCad{
     display: inline;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 input.dados{
     display: inline-block;
     height: 40px;
     width: 35%;
+    font-size: 18px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border:none;
+}
+
+
+input.data{
+    display: inline-block;
+    height: 40px;
+    width: 36%;
+    font-size: 18px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 5px;
+    border:none;
+}
+
+.selectBox{
+    display: inline-block;
+    height: 40px;
+    width: 37%;
+    font-size: 18px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 5px;
+    border:none;
+}
+
+.selectBoxCad{
+    display: inline-block;
+    height: 40px;
+    width: 182px;
     font-size: 18px;
     margin: 0px auto;
     margin-bottom: 10px;
@@ -274,4 +365,55 @@ input.submit{
     background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
     background: -o-linear-gradient(to bottom, #faa600, #f68a00);
     background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+#pets{
+    width: 100%;
+    
+}
+
+.petCad{
+    width: 100%;
+    border-top: 2px solid gray;
+    padding-top: 20px;
+}
+
+.inputPet{
+    display: inline;
+    width: fit-content;
+    margin-left: 20px;
+
+}
+
+.selGen{
+    display: flex;
+    flex-direction: row;
+    
+    label{
+        margin-right: 10px;
+    }
+
+    .idade{
+        width: 50px;
+    }
+}
+
+.addButton{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #0eb691;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.rmButton{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    text-align: center;
+    margin: 0;
+    line-height: 30px;
+    padding: 0;
 }
